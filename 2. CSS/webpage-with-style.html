@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpage with style</title>
+
+    <style type="text/css">
+
+        .blueClass{
+            color: blue;
+        }
+
+        .large{
+            font-size: 200%;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .underline{
+            text-decoration: underline;
+        }
+
+        #green{
+            color: green;
+            font-size: 150%;
+        }
+        
+        #red{
+            background-color: red;
+            padding-left: 5%;
+            padding-top: 2%;
+            font-size: 120%
+        }
+    </style>
+</head>
+<body>
+
+    &lt; h1 class="blueClass" &gt; 1. CSS is Cool &lt; /h1 &gt;
+    <h1 class="blueClass">1. CSS is Cool</h1>
+
+    <hr>
+
+        &lt;p class="large" &gt; 2. Hello World ! &lt; /p &gt;
+        <p class="large">
+            2. Hello World !
+        </p>
+
+    <hr>
+
+        &lt; p class="blueClass" &gt; Ini adalah contoh <strong>Internal</strong> style &lt; /p &gt;
+        <p class="blueClass">
+            Ini adalah contoh <strong>Internal</strong> style
+        </p>
+
+    <hr>
+        &lt; p class="blueClass" &gt; Ini adalah contoh penggabungan class <strong>blueClass</strong> dan <strong>large</strong> class &lt; /p &gt;
+        <p class="blueClass large">
+            Ini adalah contoh penggabungan class <strong>blueClass</strong> dan <strong>large</strong> class
+        </p>
+
+    <hr>
+        &lt; id="green" &gt; Ini adalah contoh penggunaan <strong>Id</strong> &lt; /p &gt;
+        <p id="green">
+            Ini adalah contoh penggunaan <strong>Id</strong>
+        </p>
+
+    <hr>
+        <p class="blueClass">
+            Ada juga yang bernama <strong>&lt;span&gt;</strong>.
+            <br> Fungsinya yaitu membuat suatu kalimat/benda pada paragraph mempunyai <span class="red underline">style khusus</span> .
+        </p>
+
+
+    <hr>
+        <div id="red">
+            <h1>Catatan</h1>
+
+            <p>
+                1. Class bisa digabung.
+            </p>
+
+            <p> 
+                2. Class berbeda dengan id. 
+                <br>
+                <br> Class bisa digunakan oleh beberapa benda.
+                Sehingga ada beberapa benda (dengan class yang sama) akan memiliki <strong>Style</strong> yang sama.
+                <br>
+                <br> sedangkan pada id, Tidak boleh ada benda dengan id yang sama. Sehingga satu <strong>style</strong> pada suatu id hanya bisa digunakan oleh id tersebut saja.
+            </p>
+        </div>
+
+</body>
+</html>
