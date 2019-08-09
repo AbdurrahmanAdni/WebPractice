@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technology-BBC News</title>
+
+    <style>
+        #topbar{
+            width: 1300px;
+            height: 40px;
+            margin: 0px auto;
+            background-color: white;
+        }
+
+        #bbc-logo{
+            margin-top: 6px;
+            margin-left: 10px;
+            float: left;
+        }
+
+        #signin-div{
+            float: left;
+            height: 100%;
+            border-left: 1px #cccccc solid;
+            margin-left: 20px;
+            padding-right: 20px;
+        }
+
+        #signin-logo{
+            position: relative;
+            margin-left: 10px;
+            padding-top: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #signin-text{
+            position: relative;
+            bottom: 6px;
+        }
+
+        #topbar ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        #topbar ul li{
+            float: left;
+            width: 80px;
+            text-align: center;
+            border-left: 1px #cccccc solid;
+            line-height: 40px;
+            display: block;
+        }
+
+        /*#topbar ul li{
+            float: left;
+            display: block;
+            width: 80px;
+            text-align: center;
+            border-left: 1px #cccccc solid;
+            line-height: 40px;
+        }*/
+
+        #topbar ul li ul li{
+            border: none;
+            display: none;
+        }
+
+        #topbar ul li:hover ul li{
+            display: block;
+        }
+
+        #search-div{
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 40px;;
+        }
+
+        #search{
+            margin-top: 7px;
+            margin-left: 10px;
+            background-color: #E4E4E4;
+            border: none;
+            font-weight: bold;
+            color: black;
+            font-size: 14px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            float: left;
+            
+        }
+
+        #searchlogo{
+            float: left;
+            height: 26px;
+            margin-top: 7px;
+            
+        }
+        
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div id="topbar">
+        <img id="bbc-logo" src="/picture/bbclogo.png" alt="bbclogo">
+
+        <div id="signin-div">
+            <img id="signin-logo" src="/picture/signinlogo.PNG" alt="signinlogo">
+            <a id="signin-text" href=""><span>Sign in</span></a> 
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Sport</a></li>
+            <li><a href="">Reel</a></li>
+            <li><a href="">Worklife</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Future</a></li>
+            <li><a href="">Culture</a></li>
+            <li ><a href="">More</a>
+                <ul>
+                    <li><a href="">Music</a> </li>
+                    <li><a href="">TV</a> </li>
+                    <li><a href="">Weather</a> </li>
+                </ul>
+            </li> 
+        </ul>    
+        
+        <div id="search-div">
+            <input id="search" type="text" name="search" placeholder="Search">
+            <input type="image" id="searchlogo" src="/picture/searchlogo.PNG" alt="searchlogo">
+        </div>
+        
+    </div>
+</body>
+</html>

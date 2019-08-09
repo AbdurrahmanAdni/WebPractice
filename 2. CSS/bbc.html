@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technology-BBC</title>
+
+    <style>
+        
+        #topbar{
+            width: 1000px;
+            height: 40px;
+            margin: 0px auto;
+            background-color:blue;
+        }
+
+        #logo{
+            margin-top: 5px;
+            width: 100px;
+            float: left;
+            margin-right: 8px;
+            
+        }
+
+        .topbar-section{
+            border-left: 1px #cccccc solid;
+            float: left;
+            height: 100%;
+            
+
+            
+        }
+
+        #signin-logo{
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin: 5px 10px;
+        }
+
+        #signin-text{
+            font-weight: bold;
+            /* karena margin-top gabisa, gunakan position */
+            position: relative;
+            top:11px;
+            left: 5px;
+            padding-right: 30px;
+        }
+
+        .navigation{
+            font-weight: bold;
+            position: relative;
+            top: 11px;
+            padding: 20px;
+            
+        }
+    
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial,Helvetica;
+            font-size: 13px;
+            
+        }
+
+    
+    </style>
+
+
+</head>
+<body>
+    <div id="topbar">
+        
+        <img id="logo" src="/picture/bbclogo.png" alt="bbclogo" >
+         
+        <div id="signin-div" class="topbar-section">
+            <img id="signin-logo" src="/picture/signinlogo.PNG" alt="signinlogo">
+            <span id="signin-text">Sign In</span>
+        </div>
+
+        <div id="home-div" class="topbar-section">
+            <span class="navigation">Home</span>
+        </div>
+
+        <div id="sport-div" class="topbar-section">
+            <span class="navigation">Sport</span>
+        </div>
+
+        <div id="reel-div" class="topbar-section">
+                <span class="navigation">Reel</span>
+        </div>
+
+        <div id="Worklife-div" class="topbar-section">
+                <span class="navigation">Worklife</span>
+        </div>
+
+        <div id="travel-div" class="topbar-section">
+                <span class="navigation">Travel</span>
+        </div>
+
+        <div id="more-div" class="topbar-section">
+                <span class="navigation">More</span>
+        </div>
+
+        
+
+    </div>
+</body>
+</html>
