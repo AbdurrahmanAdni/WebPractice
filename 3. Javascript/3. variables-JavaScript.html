@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Variables-JS</title>
+    </head>
+
+    <body>
+        
+        <input type="text" id="input">
+        <button id="inputButton">Click Me!</button>
+        <p>Text dibawah ini akan diganti</p>
+        <p id="changeText">blablabla</p>
+        <script>
+            var isengText = "Ini cuma iseng";
+            alert(isengText);
+
+            var inputText = "";
+            /*Maksudnya inisialisasi bahwa 
+            inputText adalah sebuah string kosong*/
+
+            //fungsi klik tombol
+            document.getElementById("inputButton").onclick = function(){
+                //ambil "value" inputan
+                inputText = document.getElementById("input").value;
+                //alert(inputText);
+
+                //sekarang ganti text "blablabla"
+                document.getElementById("changeText").innerHTML = inputText;
+            }
+
+        
+        </script>
+
+    </body>
+
+
+</html>

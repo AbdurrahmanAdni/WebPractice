@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#shape{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    display: none;
+    position: relative;
+}
+
+#timeText{
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}

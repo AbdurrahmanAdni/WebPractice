@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <Title>Javascript</Title>
+    </head>
+
+    <body>
+        <p id="text">Hello World</p>
+        <button id="myButton">Change Text</button>
+        <hr>
+
+
+        <p id="secondParagraph">2. Javascript is...</p>
+        <button id="secondButton">Append Text 2</button>
+        <hr>
+
+        <p id="thirdParagraph">3. Javascript is...</p>
+        <button id="thirdButton">Append Text 3</button>
+        <hr>
+
+        <p id="fourthParagraph">Javascript is...</p>
+        <button id="fourthButton">Append Text 4</button>
+        <hr>
+
+        <p id="emptyParagraph"></p>
+        <button id="createParagraph">Creat text</button>
+        <hr>
+
+        <p id="someText1">Change my style</p>
+        <button id="someButton1">Change text style</button>
+        <p id="someText2">i wanna disapearing this paragraph</p>
+        <button id="someButton2">Disapear the text</button>
+        
+        <script>
+            //document.getElementById("text").innerHTML = "Helloooo";
+            document.getElementById("myButton").onclick = function(){   
+                //alert("Button Clicked");
+                document.getElementById("text").innerHTML = "Text Changed !";
+            }
+
+            document.getElementById("secondButton").onclick = function(){   
+                //alert("Button Clicked");
+                document.getElementById("secondParagraph").innerHTML += " awesome!";
+            }
+
+            document.getElementById("thirdButton").onclick = function(){   
+                //alert("Button Clicked");
+                document.getElementById("thirdParagraph").innerHTML = document.getElementById("thirdParagraph").innerHTML + " awesome!";
+            }
+
+            document.getElementById("fourthButton").onclick = function(){   
+                //alert("Button Clicked");
+                document.getElementById("fourthParagraph").innerHTML = "I think " + document.getElementById("fourthParagraph").innerHTML + " awesome!";
+            }
+
+            document.getElementById("createParagraph").onclick = function(){
+                document.getElementById("emptyParagraph").innerHTML = "<h1> New Paragraph </h1>";
+            }
+
+            document.getElementById("someButton1").onclick = function(){
+                document.getElementById("someText1").style.color = "red";
+
+                //normalnya, style menggunakan font-size. tapi karena ini fungsi, maka jadi fontSize
+                document.getElementById("someText1").style.fontSize = "28px";
+                
+            }
+
+            document.getElementById("someButton2").onclick = function(){
+                document.getElementById("someText2").style.display = "none";
+            }
+        </script>
+
+
+    </body>
+</html>

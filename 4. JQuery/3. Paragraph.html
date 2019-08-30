@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing Content</title>
+
+    <style type="text/css">
+        #circle{
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+
+    <script 
+        type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+
+</head>
+<body>
+
+    <div id="circle"></div>
+
+    <p>This is Some Text</p>
+
+    <iframe src="https://kuliah.itb.ac.id" ></iframe>
+
+    <script type="text/javascript">
+
+        $("#circle").hover(function(){
+
+            //alert($("p").html());
+
+            //$("p").html("This text has changed");
+
+            //Ganti link src iframe jadi goal.com
+            $("iframe").attr("src", "https://www.youtube.com/embed/tgbNymZ7vqY");
+
+        });
+
+    
+    </script>
+</body>
+</html>

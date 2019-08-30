@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Quick Challeng</title>
+        <style>
+            #redCircle{
+                background-color: red;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin: 20px;
+            }
+
+            
+            #greenCircle{
+                background-color: green;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin: 20px;
+            }
+
+            
+            #blueCircle{
+                background-color: blue;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+               margin: 20px;
+            }
+        </style>
+    
+    </head>
+
+
+    
+    <body>
+        <div id="redCircle"></div>
+        <button id="redButton">Red Button</button>
+
+        <div id="greenCircle"></div>
+        <button id="greenButton">Green Button</button>        
+
+        <div id="blueCircle"></div>
+        <button id="blueButton">Blue Button</button>
+    
+        <script type="text/javascript">
+            
+            document.getElementById("redCircle").onclick = function(){
+                document.getElementById("redCircle").style.display = "none";
+            }
+
+            document.getElementById("greenCircle").onclick = function(){
+                document.getElementById("greenCircle").style.display = "none";
+            }
+
+            document.getElementById("blueCircle").onclick = function(){
+                document.getElementById("blueCircle").style.display = "none";
+            }
+        </script>
+    
+
+    </body>
+</html>

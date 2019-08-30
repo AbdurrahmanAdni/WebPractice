@@ -8,10 +8,11 @@
 
     <style>
         #topbar{
-            width: 1300px;
+            width: 1200px;
             height: 40px;
             margin: 0px auto;
             background-color: white;
+            font-size: 14px;
         }
 
         #bbc-logo{
@@ -101,7 +102,25 @@
             margin-top: 7px;
             
         }
+
+        .clear-float{
+            clear: both;
+        }
+
+        #menu-bar-container{
+            background-color: #BB1919;
+            width: 100%;
+            height: 100px;
+        }
         
+        #menu-bar-container-link{
+            color: white;
+            font-size: 35px;
+            padding-left: 90px;
+            position: relative;
+            top: 15px;
+            margin: 0px auto;
+        }
 
         a{
             text-decoration: none;
@@ -111,6 +130,7 @@
         body{
             margin: 0px;
             padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 
@@ -150,5 +170,19 @@
         </div>
         
     </div>
+
+    <div class="clear-float"></div>
+
+    <div id="menu-bar-container">
+        <a id="menu-bar-container-link" href="">NEWS</a>
+
+        <div id="menu-bar">
+
+        </div>
+
+    </div>
+
+
+
 </body>
 </html>

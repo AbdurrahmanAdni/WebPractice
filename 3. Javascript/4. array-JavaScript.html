@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Array-JS</title>
+    </head>
+
+    <body>
+        
+        <script type="text/javascript">
+            var myArray = new Array();
+
+            myArray[0] = "Pizza"
+            myArray[1] = "Chocolate"
+            myArray[2] = 2;
+
+            //alert(myArray[2]);
+
+            //untuk melihat semua isi array
+            console.log(myArray);
+            //buka di console chrome
+
+            //untuk mengetahui panjang array
+            console.log(myArray.length);
+
+            //memasukan objek pada array
+            myArray.push("Hehe");
+
+            //lihat isi array
+            console.log(myArray);
+
+            //hapus array. misal hapus "chocolate"
+            myArray.splice(1,1);
+            //splice(startNumber, jumlahYangDihapus)
+
+            //splice juga bisa digunakan untuk "add" item
+            //misal memasukan "Chocolate is back"
+            //pada array no. 3
+            myArray.splice(2, 0, "Chocolate is back");
+            //splice(indeksTujuan,mauHapusBerapaElement,apaYangMauDimasukin);
+
+
+            //splice juga bisa digunakan untuk "remove + add" item
+            //misal memasukan "Chocolate is remover"
+            //pada array no. 2 dan hapus array pada no.2
+            myArray.splice(1, 1, "Chocolate is remover");
+            //splice(indeksTujuan,mauHapusBerapaElement,apaYangMauDimasukin);
+
+            myArray.splice(1, 1, "Chocolate is remover", "Num-num");
+            //splice(indeksTujuan,mauHapusBerapaElement,apaYangMauDimasukin);
+
+
+
+        </script>
+
+    </body>
+
+</html>
